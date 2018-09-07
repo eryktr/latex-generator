@@ -6,7 +6,10 @@
         xmlns:local="clr-namespace:LatexGenerator"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem>About</MenuItem>
+            <MenuItem>Settings</MenuItem>
+        </Menu>
+    </DockPanel>
 </Window>
