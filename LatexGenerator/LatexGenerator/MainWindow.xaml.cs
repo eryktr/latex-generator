@@ -35,7 +35,9 @@ namespace LatexGenerator
         {
             var config = ConfigBuilder.BuildConfiguration();
             var fg = new FileGenerator(config);
-            fg.CreateFile();
+            var file = fg.CreateFile();
+            var fw = new FileWriter(file, config);
+            fw.WriteFile();
         }
 
     }

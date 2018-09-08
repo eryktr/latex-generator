@@ -16,6 +16,7 @@ namespace LatexGenerator.Services
         public int SectionCount { get; set; }
         public bool? IncludeSections { get; set; }
         public bool? IncludeTColorBox { get; set; }
+        public string[] Packages { get; set; }
 
         public AppConfiguration()
         {

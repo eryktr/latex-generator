@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,6 +23,7 @@ namespace LatexGenerator.Services
             var includeSections = _mainWindow.SectionsCheckBox.IsChecked;
             var sectionsCount = int.Parse(_mainWindow.SectionsTextBox.Text);
             var includeColorBox = _mainWindow.TColorBoxTextBox.IsChecked;
+            var Packages = ConfigurationManager.AppSettings["Packages"].Split(',');
 
             var config = new AppConfiguration
             {
@@ -29,7 +31,8 @@ namespace LatexGenerator.Services
                 ItemCount = itemCount,
                 IncludeSections = includeSections,
                 SectionCount = sectionsCount,
-                IncludeTColorBox = includeColorBox
+                IncludeTColorBox = includeColorBox,
+                Packages =  Packages
             };
 
             return config;

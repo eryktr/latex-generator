@@ -56,9 +56,11 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Models\ErrorType.cs" />
+    <Compile Include="Models\LatexConfiguration.cs" />
     <Compile Include="Services\AppConfiguration.cs" />
     <Compile Include="Services\ConfigurationBuilder.cs" />
     <Compile Include="Services\FileGenerator.cs" />
+    <Compile Include="Services\FileWriter.cs" />
     <Compile Include="Services\WindowManager.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>

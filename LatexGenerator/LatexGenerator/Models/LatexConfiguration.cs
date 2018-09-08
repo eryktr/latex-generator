@@ -15,5 +15,8 @@ namespace LatexGenerator.Models
         public static string EndListTag = @"\end{enumerate}";
         public static string SectionTag = @"\section{}";
         public static string Indent = "   ";
+        public static string PackageTag = @"\usepackage";
+        public static string AuthorTag = @"\author{}";
+
     }
 }
