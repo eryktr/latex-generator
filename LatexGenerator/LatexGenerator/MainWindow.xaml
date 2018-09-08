@@ -53,22 +53,26 @@
                     <RowDefinition></RowDefinition>
                     <RowDefinition></RowDefinition>
                     <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
                 </Grid.RowDefinitions>
                  
-                <Label Grid.Column="0" Grid.Row="0" Content="Number of items:"></Label>
-                <Label Grid.Column="0" Grid.Row="1" Content="Generate sections"></Label>
-                <Label Grid.Column="0" Grid.Row="2" Content="Number of sections:"></Label>
-                <Label Grid.Column="0" Grid.Row="3" Content="Generate TColorBox"></Label>
+                <Label Grid.Column="0" Grid.Row="0" Content="File Name: "></Label>
+                <Label Grid.Column="0" Grid.Row="1" Content="Number of items:"></Label>
+                <Label Grid.Column="0" Grid.Row="2" Content="Generate sections"></Label>
+                <Label Grid.Column="0" Grid.Row="3" Content="Number of sections:"></Label>
+                <Label Grid.Column="0" Grid.Row="4" Content="Generate TColorBox"></Label>
                 
-                <TextBox Grid.Column="1" Grid.Row="0"></TextBox>
-                <CheckBox Grid.Column="1" Grid.Row="1" VerticalAlignment="Center"></CheckBox>
-                <TextBox Grid.Column="1" Grid.Row="2"></TextBox>
-                <CheckBox Grid.Column="1" Grid.Row="3" VerticalAlignment="Center"></CheckBox>
+                <TextBox Grid.Column="1" Grid.Row="0" Name="FileTextBox"></TextBox>
+                <TextBox Grid.Column="1" Grid.Row="1" Name="ItemsTextBox"></TextBox>
+                <CheckBox Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" Name="SectionsCheckBox"></CheckBox>
+                <TextBox Grid.Column="1" Grid.Row="3" Name="SectionsTextBox"></TextBox>
+                <CheckBox Grid.Column="1" Grid.Row="4" VerticalAlignment="Center" Name="TColorBoxTextBox"></CheckBox>
+
 
             </Grid>
             
             <StackPanel>
-                <Button Content="Generate"></Button>
+                <Button Content="Generate" Name="GenerateButton" Click="OnGenerateButtonClicked"></Button>
             </StackPanel>
         </StackPanel>
     </DockPanel>
