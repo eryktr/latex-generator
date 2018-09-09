@@ -9,7 +9,7 @@ using LatexGenerator.Models;
 
 namespace LatexGenerator.Services
 {
-    class FileGenerator
+    internal class FileGenerator
     {
         private readonly AppConfiguration _configuration;
         private const string FileExtension = ".tex";

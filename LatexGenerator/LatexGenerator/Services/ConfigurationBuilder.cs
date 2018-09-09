@@ -23,7 +23,8 @@ namespace LatexGenerator.Services
             var includeSections = _mainWindow.SectionsCheckBox.IsChecked;
             var sectionsCount = int.Parse(_mainWindow.SectionsTextBox.Text);
             var includeColorBox = _mainWindow.TColorBoxTextBox.IsChecked;
-            var Packages = ConfigurationManager.AppSettings["Packages"].Split(',');
+            var simplePackages = ConfigurationManager.AppSettings["SimplePackages"].Split(';');
+            var complexPackages = ConfigurationManager.AppSettings["ComplexPackages"].Split(';');
 
             var config = new AppConfiguration
             {
@@ -32,7 +33,8 @@ namespace LatexGenerator.Services
                 IncludeSections = includeSections,
                 SectionCount = sectionsCount,
                 IncludeTColorBox = includeColorBox,
-                Packages =  Packages
+                SimplePackages =  simplePackages,
+                ComplexPackages = complexPackages
             };
 
             return config;

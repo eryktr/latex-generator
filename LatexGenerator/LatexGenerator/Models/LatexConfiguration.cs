@@ -17,6 +17,7 @@ namespace LatexGenerator.Models
         public static string Indent = "   ";
         public static string PackageTag = @"\usepackage";
         public static string AuthorTag = @"\author{}";
-
+        public static string ItemTag = @"\item";
+        public static string TColorBoxTag = @"\newtcolorbox{explanation}[2][]{colframe = blue!80, title = #2}";
     }
 }
