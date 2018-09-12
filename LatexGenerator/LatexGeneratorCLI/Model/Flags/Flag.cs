@@ -8,6 +8,8 @@ namespace LatexGeneratorCLI.Model.Flags
 {
     abstract class Flag
     {
-        public abstract void execute(AppConfiguration configuration);
+        public abstract void Execute(AppConfiguration configuration);
+        public abstract int GetNumberOfArguments();
+        
     }
 }

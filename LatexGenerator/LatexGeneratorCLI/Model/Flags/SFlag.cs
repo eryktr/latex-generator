@@ -15,7 +15,7 @@ namespace LatexGeneratorCLI.Model.Flags
             NumOfArguments = 1;
         }
 
-        public override void execute(AppConfiguration configuration)
+        public override void Execute(AppConfiguration configuration)
         {
             configuration.IncludeSections = true;
             configuration.SectionCount = int.Parse(Arguments[0]);

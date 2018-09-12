@@ -3,16 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using LatexGenerator.Services;
 
 namespace LatexGeneratorCLI.Model.Flags
 {
-    class CFlag : BooleanFlag
+    abstract class BooleanFlag : Flag
     {
-     
-        public override void Execute(AppConfiguration configuration)
+        public override int GetNumberOfArguments()
         {
-            configuration.IncludeTColorBox = true;
+            return 0;
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,12 +10,23 @@ namespace LatexGeneratorCLI.Model.Flags
 {
     abstract class ArgumentFlag : Flag
     {
-        public  int NumOfArguments;
-        public List<string> Arguments;
+        public new List<string> Arguments = new List<string>();
+        public int NumOfArguments;
 
-        public void SetArguments()
+        public override int GetNumberOfArguments()
         {
+            return NumOfArguments;
+        }
 
+        public void SetArguments(State state)
+        {
+            for (int i = 0; i < NumOfArguments; i++)
+            {
+                var ci = state.CurrentIndex;
+                var cs = state.Args[ci];
+                Arguments.Add(cs);
+                state.CurrentIndex++;
+            }
         }
     }
 }

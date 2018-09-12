@@ -13,7 +13,7 @@ namespace LatexGeneratorCLI.Model.Flags
         {
             NumOfArguments = 1;
         }
-        public override void execute(AppConfiguration configuration)
+        public override void Execute(AppConfiguration configuration)
         {
             throw new NotImplementedException();
         }
