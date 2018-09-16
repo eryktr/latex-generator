@@ -23,7 +23,7 @@ namespace LatexGeneratorCLI.Model.Flags
             for (int i = 0; i < NumOfArguments; i++)
             {
                 var ci = state.CurrentIndex;
-                var cs = state.Args[ci];
+                var cs = state.Args[ci+1];
                 Arguments.Add(cs);
                 state.CurrentIndex++;
             }

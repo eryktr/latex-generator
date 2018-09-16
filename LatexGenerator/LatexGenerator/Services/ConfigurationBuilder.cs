@@ -9,7 +9,7 @@ namespace LatexGenerator.Services
 {
     public class ConfigurationBuilder
     {
-        private MainWindow _mainWindow;
+        private readonly MainWindow _mainWindow;
 
         public ConfigurationBuilder(MainWindow mw)
         {

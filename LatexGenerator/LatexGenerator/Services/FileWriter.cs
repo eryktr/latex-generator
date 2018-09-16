@@ -9,7 +9,7 @@ using LatexGenerator.Models;
 
 namespace LatexGenerator.Services
 {
-    internal class FileWriter
+    public class FileWriter
     {
         private readonly FileStream _fileStream;
         private readonly AppConfiguration _appConfiguration;
@@ -26,6 +26,7 @@ namespace LatexGenerator.Services
             {
                 
                 sw.WriteLine(LatexConfiguration.DocumentclassTag);
+                if(_appConfiguration.SimplePackages == null) Console.WriteLine("ERROR");
                 foreach (var package in _appConfiguration.SimplePackages)
                 {
                     sw.WriteLine(LatexConfiguration.PackageTag + $"{{{package}}}");

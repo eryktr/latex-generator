@@ -15,7 +15,7 @@ namespace LatexGeneratorCLI.Model.Flags
         }
         public override void Execute(AppConfiguration configuration)
         {
-            throw new NotImplementedException();
+            configuration.ItemCount = int.Parse(Arguments[0]);
         }
     }
 }

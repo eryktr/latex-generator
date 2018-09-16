@@ -33,6 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -47,6 +48,7 @@
     <Compile Include="Model\Flags\BooleanFlag.cs" />
     <Compile Include="Model\Flags\CFlag.cs" />
     <Compile Include="Model\Flags\Flag.cs" />
+    <Compile Include="Model\Flags\FlagWrapper.cs" />
     <Compile Include="Model\Flags\IFlag.cs" />
     <Compile Include="Model\Flags\SFlag.cs" />
     <Compile Include="Model\State.cs" />
