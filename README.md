@@ -1,6 +1,7 @@
 <h1>LaTeX Generator </h1>
 
-<b>LaTeX Generator</b> is a dekstop application that can be used to quickly generate LaTeX files.
+<b>LaTeX Generator</b> is a dekstop application that can be used to quickly generate LaTeX files. 
+I created it using C# with WPF.
 Using this app, you can generate documents with:
 <ul>
   <li> Any number of sections </li>
@@ -17,3 +18,4 @@ This program also features a <b> command line interface <b> with the following p
   <li> -s n</li> generates <i> n </i> sections
   <li> -c </li> generates a pre-defined tcolorbox environment.
 </ul>
+
