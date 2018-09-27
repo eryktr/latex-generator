@@ -18,10 +18,11 @@ namespace LatexGenerator.Services
 
         public AppConfiguration BuildConfiguration()
         {
-            var fileName = _mainWindow.FileTextBox.Text;
-            var itemCount = int.Parse(_mainWindow.ItemsTextBox.Text);
+
+            var fileName =  _mainWindow.FileTextBox.Text != string.Empty ?_mainWindow.FileTextBox.Text : "";
+            var itemCount =  _mainWindow.ItemsTextBox.Text != string.Empty ? int.Parse(_mainWindow.ItemsTextBox.Text):0;
             var includeSections = _mainWindow.SectionsCheckBox.IsChecked;
-            var sectionsCount = int.Parse(_mainWindow.SectionsTextBox.Text);
+            var sectionsCount = _mainWindow.SectionsTextBox.Text != string.Empty ? int.Parse(_mainWindow.SectionsTextBox.Text) : 0;
             var includeColorBox = _mainWindow.TColorBoxTextBox.IsChecked;
             var simplePackages = ConfigurationManager.AppSettings["SimplePackages"].Split(';');
             var complexPackages = ConfigurationManager.AppSettings["ComplexPackages"].Split(';');

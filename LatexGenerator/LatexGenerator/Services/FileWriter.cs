@@ -42,7 +42,7 @@ namespace LatexGenerator.Services
                     sw.WriteLine(LatexConfiguration.TColorBoxTag);
                 }
 
-                sw.WriteLine(LatexConfiguration.AuthorTag);
+                sw.WriteLine(LatexConfiguration.TitleTag);
                 sw.WriteLine(LatexConfiguration.BeginDocTag);
                 if (_appConfiguration.IncludeSections == true)
                 {
